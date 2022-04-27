@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import {ThemeProvider } from "@mui/material";
+import React from "react";
+import { BrowserRouter, Route, Routes} from "react-router-dom";
+import Theme from "./Thems";
+import Home from "./Components/Home";
+import Page1 from "./Components/Page1";
+import Page2 from "./Components/Page2";
+import Navbar from "./Components/TopNavbar/Navbar";
+import LandingPage from "./Components/LandingPage/LandingPage";
+import PaperComponent from "./Components/LatestComponent/PaperComponent";
+import LatestArticle from "./Components/LatestArticleComponent/LatestArticle";
+import LatestPaper from "./Components/LatestStoriesComponent/LatestPaper";
+import BlogPage from "./Pages/BlogPage";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <ThemeProvider theme={Theme}>
+    <BrowserRouter>
+    <BlogPage/>
+      {/* <Navbar/>
+      <LandingPage/>
+      <PaperComponent/>
+      <LatestArticle/>
+      <LatestPaper/> */}
+      {/* <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/page1" element={<Page1 />} />
+        <Route path="/page2" element={<Page2 />} />
+      </Routes> */}
+    </BrowserRouter>
+    </ThemeProvider>
 
+  );
+};
 export default App;
