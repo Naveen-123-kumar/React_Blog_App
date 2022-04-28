@@ -5,6 +5,8 @@ import LatestArticle from "../Components/LatestArticleComponent/LatestArticle";
 import PaperComponent from "../Components/LatestComponent/PaperComponent";
 import Navbar from "../Components/TopNavbar/Navbar";
 import LatestPaper from "../Components/LatestStoriesComponent/LatestPaper";
+
+import MainPage from "../Components/LatestArticleComponent/MainPage";
 const BlogPage = () => {
   return (
     <>
@@ -15,12 +17,11 @@ const BlogPage = () => {
           <Typography variant="h4">The Latest</Typography>
           <PaperComponent />
         </Box>
-        <Box mx="auto" width="90%" paddingBottom={"80px"} paddingTop="20px">
-          <Typography variant="h4"> Latest Article</Typography>
-          <br /><br />
-
+        {/* <Box mx="auto" width="90%" paddingBottom={"80px"} paddingTop="5px" >
+          <Typography variant="h4" paddingBottom={12}> Latest Article</Typography>
           <LatestArticle />
-        </Box>
+        </Box> */}
+        <MainPage/>
 
         <Box mx="auto" width="90%" paddingBottom={"80px"} paddingTop="20px">
           <Typography variant="h4"> Latest Stories</Typography>

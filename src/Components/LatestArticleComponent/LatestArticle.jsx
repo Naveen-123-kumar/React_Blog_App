@@ -1,11 +1,19 @@
-import { Box, Paper, Hidden, Typography,Grid } from "@mui/material";
+import { Box, Paper, Typography,Grid } from "@mui/material";
 import React from "react";
-import Image1 from "../../Assets/Nature.jpg";
+import Image1 from "../../Assets/OldBuilding.jpg";
 const Data=[
   {
     img1: Image1,
     Heading1: "Catch Waves with",
     Heading2: "an Adventure Guide",
+    sub1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit hfoerouhfodsihgpd hga",
+    subh1: "Travel",
+    date1: "/ August 19 2017",
+  },
+  {
+    img1: Image1,
+    Heading1: "Joshua Tree",
+    Heading2: "Overnight Adventure",
     sub1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit hfoerouhfodsihgpd hga",
     subh1: "Travel",
     date1: "/ August 19 2017",
@@ -129,13 +137,15 @@ const LatestArticle = () => {
 }
 const Cards=(props)=>{
   const listitems=props.Data.map((card)=>(
-    <Paper elevation={0}>
+    <Grid item lg='12' xs={12}>
 
-    <Box sx={{ width: { xs: "100%", md: "100%"},display:{xs:'flex',md:'flex'},flexDirection:{xs:'row',md:'row' }}} >
+    <Paper elevation={1}>
+
+    <Box sx={{ width: { xs: "100%", md: "100%"},display:{xs:'flex',md:'flex'}}} paddingY='10px'>
     <Box
       sx={{
         width: { md: "255px", xs: "160px" },
-        height: { md: "22vh", xs: "15vh" },
+        height: { md: "24vh", xs: "15vh" },
         backgroundImage: `url(${Image1})`,
         backgroundSize: "100% 100%",
         backgroundRepeat: "no-repeat",
@@ -144,30 +154,30 @@ const Cards=(props)=>{
       borderRadius="10px"
       textAlign="left"
     />
-    <Box sx={{width:{md:'450px',xs:'200px'}}}>
-      <Typography variant="h5" py={"auto"} paddingLeft="20px">
+    <Box sx={{width:{md:'450px',xs:'200px'}}} paddingLeft='20px'>
+      <Typography variant="subtitle1" py={"auto"} >
       <b>{card.Heading1}</b>
       </Typography>
-      <Typography variant="h5" py={"auto"} paddingLeft="20px">
-        Overnight Adventure
+      <Typography variant="subtitle1" py={"auto"} >
+      <b>{card.Heading2}</b>
       </Typography>
-      <Typography variant="subtitle2" py={"auto"} paddingLeft="20px">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam,
-       
+      <Typography variant="caption text" py={"auto"}>
+      {card.sub1}
       </Typography>
-      <Box paddingTop={"20px"} paddingBottom="15px">
-        <Typography variant="subtitle1" py={"auto"} paddingLeft="20px">
-          <b>Travel</b> / August 19 2017
+      <Box paddingTop={"10px"} paddingBottom="5px">
+        <Typography variant="caption text" py={"auto"}>
+        <b>{card.subh1}</b> {card.date1}
         </Typography>
       </Box>
     </Box>
     
 </Box>
 </Paper>
+</Grid>
   ));
   return (
     <>
-    <Grid container spacing={6}>
+    <Grid container spacing={1}  display={'flex'} flexDirection='column' width={'100%'}>
         {listitems}
       </Grid>
     </>
