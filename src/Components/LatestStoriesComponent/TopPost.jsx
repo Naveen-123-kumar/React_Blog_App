@@ -26,6 +26,7 @@ const Data=[
     subh1: "Travel",
     date1: "/ August 19 2017",
   },
+  
 ]
 
 const TopPost = () => {
@@ -43,7 +44,7 @@ const Cards=(props)=>{
 
       <Paper elevation={1} >
   
-      <Box sx={{ width: { xs: "100%", md: "100%"},display:{xs:'flex',md:'flex'}}} paddingY='5px' >
+      <Box sx={{ width: { xs: "100%", md: "100%"},display:{xs:'flex',md:'flex'}}} paddingY='10px' >
       <Box
         sx={{
           width: { md: "150px", xs: "160px" },
@@ -78,7 +79,7 @@ const Cards=(props)=>{
     ));
     return (
       <>
-      <Grid container spacing={1}  display={'flex'} flexDirection='column' width={'100%'} mx=
+      <Grid container spacing={1}  display={'flex'} flexDirection='column' px=
       'auto'>
           {listitems}
         </Grid>

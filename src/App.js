@@ -11,11 +11,13 @@ import PaperComponent from "./Components/LatestComponent/PaperComponent";
 import LatestArticle from "./Components/LatestArticleComponent/LatestArticle";
 import LatestPaper from "./Components/LatestStoriesComponent/LatestPaper";
 import BlogPage from "./Pages/BlogPage";
+import BollywoodPage from "./Components/Bollywood/BollywoodPage";
 const App = () => {
   return (
     <ThemeProvider theme={Theme}>
     <BrowserRouter>
-    <BlogPage/>
+    {/* <BlogPage/> */}
+    <BollywoodPage/>
       {/* <Navbar/>
       <LandingPage/>
       <PaperComponent/>
