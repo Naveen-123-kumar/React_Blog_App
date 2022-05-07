@@ -110,6 +110,7 @@ const Cards = (props) => {
         display={"flex"}
         flexDirection="column"
         width={"100%"}
+        paddingRight='10px'
       >
         {listitems}
       </Grid>

@@ -23,19 +23,19 @@ const Component2 = () => {
 
             <Box
               sx={{
-                width: { md: "450px", xs: "200px" },
+                width: { md: "450px", xs: "350px" },
                 paddingTop: { md: "15px", xs: "30px" },
               }}
-              paddingBottom="20px"
+              // paddingBottom="20px"
             >
-              <Typography variant="h6" py={"auto"}>
-                <b>Catch Waves with</b>
+              <Typography variant="h4" py={"auto"}>
+                Catch Waves with
               </Typography>
-              <Typography variant="h6" py={"auto"}>
-                <b>an Adventure Guide</b>
+              <Typography variant="h4" py={"auto"}>
+                an Adventure Guide
               </Typography>
 
-              <Box paddingTop={"5px"} paddingBottom="5px">
+              <Box paddingTop={"5px"} paddingBottom="20px">
                 <Typography variant="caption text" py={"auto"}>
                   <b>Travel</b> / August 19 2017
                 </Typography>
@@ -55,7 +55,7 @@ const Component2 = () => {
             justifyContent={"space-between"}
             border="1px solid blue"
             borderRadius="5px"
-            height={"85vh"}
+            height={"82vh"}
           >
             <Typography align="center" py="auto" my="auto">
               Advertistement

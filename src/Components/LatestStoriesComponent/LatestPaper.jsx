@@ -40,7 +40,7 @@ const Cards = (props) => {
       <Box sx={{ width: { xs: "100%", md: "100%" }, paddingTop: "60px" }}>
         <Paper elevation={1}>
           <Box paddingLeft={"50px"} paddingY="30px">
-            <Typography variant="h4" py={"auto"}>
+            <Typography variant="h5" py={"auto"}>
               <b>{card.Heading1}</b>
             </Typography>
             <Typography variant="h5" py={"auto"}>

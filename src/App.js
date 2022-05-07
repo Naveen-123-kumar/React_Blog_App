@@ -12,12 +12,14 @@ import LatestArticle from "./Components/LatestArticleComponent/LatestArticle";
 import LatestPaper from "./Components/LatestStoriesComponent/LatestPaper";
 import BlogPage from "./Pages/BlogPage";
 import BollywoodPage from "./Components/Bollywood/BollywoodPage";
+import ReactAnimation from "./Components/ReactAnimationComponent/ReactAnimation";
 const App = () => {
   return (
     <ThemeProvider theme={Theme}>
     <BrowserRouter>
-    {/* <BlogPage/> */}
-    <BollywoodPage/>
+    {/* <ReactAnimation/> */}
+    <BlogPage/>
+    {/* <BollywoodPage/> */}
       {/* <Navbar/>
       <LandingPage/>
       <PaperComponent/>
