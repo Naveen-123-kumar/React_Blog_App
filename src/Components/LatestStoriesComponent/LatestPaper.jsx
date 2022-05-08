@@ -37,7 +37,7 @@ const LatestPaper = () => {
 const Cards = (props) => {
   const listitems = props.Data.map((card) => (
     <Grid item lg={4} xs={12}>
-      <Box sx={{ width: { xs: "100%", md: "100%" }, paddingTop: "60px" }}>
+      <Box sx={{ width: { xs: "100%", md: "100%" }, paddingTop: {md:"60px",xs:'20px'}}}>
         <Paper elevation={1}>
           <Box paddingLeft={"50px"} paddingY="30px">
             <Typography variant="h5" py={"auto"}>
@@ -61,7 +61,7 @@ const Cards = (props) => {
   ));
   return (
     <>
-      <Grid container spacing={6}>
+      <Grid container spacing={3}>
         {listitems}
       </Grid>
     </>

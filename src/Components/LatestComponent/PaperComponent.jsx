@@ -37,11 +37,11 @@ const PaperComponent = () => {
 const Cards = (props) => {
   const listitems = props.Data.map((card) => (
     <Grid item lg={4} xs={12}>
-      <Box sx={{ width: { xs: "100%", md: "100%" }, paddingTop: "60px" }}>
+      <Box sx={{ width: { xs: "100%", md: "100%" }, paddingTop: {md:'30px',xs:'30px'}}}>
         <Paper elevation={1}>
           <Box
             sx={{
-              width: { md: "373px", xs: "340px" },
+              width: { md: "390px", xs: "350px" },
               height: { md: "30vh", xs: "30vh" },
               backgroundImage: `url(${Image1})`,
               backgroundSize: "100% 100%",
@@ -73,7 +73,7 @@ const Cards = (props) => {
   ));
   return (
     <>
-      <Grid container spacing={6}>
+      <Grid container spacing={3}>
         {listitems}
       </Grid>
     </>

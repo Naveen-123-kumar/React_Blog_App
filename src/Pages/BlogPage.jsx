@@ -14,21 +14,21 @@ const BlogPage = () => {
       <Paper elevation={0}>
         <Navbar />
         <LandingPage />
-        <Box mx="auto" width="90%" paddingBottom={"80px"} paddingTop="20px">
+        <Box mx="auto" paddingTop="20px" sx={{paddingBottom:{md:'80px',xs:'40px'},width:{md:'90%',xs:'98%'}}} >
           <Typography variant="h4">The Latest</Typography>
           <PaperComponent />
         </Box>
       
         <MainPage/>
 
-        <Box mx="auto" width="90%" paddingBottom={"80px"} paddingTop="80px">
+        <Box mx="auto" width="90%" paddingTop="80px" sx={{paddingBottom:{md:'80px',xs:'30px'}}}>
           <Typography variant="h4"> Latest Stories</Typography>
           <br />
           <br />
           <hr />
           <LatestPaper />
         </Box>
-        <Box display={'flex'} sx={{paddingLeft:{xs:'10px',md:'70px'},paddingBottom:{xs:'20px',md:'40px'}}}>
+        <Box display={'flex'} sx={{paddingLeft:{xs:'20px',md:'70px'},paddingBottom:{xs:'20px',md:'40px'}}}>
           <Typography variant="caption text" paddingTop={'5px'}>LOAD MORE</Typography>
           <ArrowForwardIcon fontSize="large"/>
         </Box>

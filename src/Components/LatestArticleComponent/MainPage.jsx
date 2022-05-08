@@ -7,12 +7,12 @@ import TopPost from "../LatestStoriesComponent/TopPost";
 const MainPage = () => {
   return (
     <>
-     <Box sx={{paddingLeft:{xs:'10px',md:'70px'},paddingBottom:{xs:'10px',md:'50px'}}}>
+     <Box sx={{paddingLeft:{xs:'20px',md:'70px'},paddingBottom:{xs:'30px',md:'50px'}}}>
             <Typography variant="h4"> Latest Article</Typography>
           </Box>
         <Grid container>
          
-          <Grid item lg="8" xs={12} paddingLeft='70px'>
+          <Grid item lg="8" xs={12} sx={{paddingLeft:{xs:'0',md:'70px'}}}>
             <LatestArticle />
           <Box display={'flex'} justifyContent='start' sx={{paddingY:{xs:'20px',md:'30px'}}}>
           <ArrowDownwardIcon fontSize='large' color='red'/> <Typography variant="caption text" paddingTop='5px'>LOAD MORE</Typography>
@@ -76,8 +76,8 @@ const MainPage = () => {
                   
                   <Box
                     sx={{
-                      width: { md: "410px", xs: "160px" },
-                      height: { md: "35vh", xs: "15vh" },
+                      width: { md: "410px", xs: "360px" },
+                      height: { md: "35vh", xs: "25vh" },
                       backgroundImage: `url(${Image1})`,
                       backgroundSize: "100% 100%",
                       backgroundRepeat: "no-repeat",
@@ -87,18 +87,18 @@ const MainPage = () => {
                     textAlign="left"
                   />
                   <Box
-                    sx={{ width: { md: "450px", xs: "200px" } }}
+                    sx={{ width: { md: "450px", xs: "200px" },paddingX:{md:'5px',xs:'10px'} }}
                     paddingBottom="20px"
                   
                   >
-                    <Typography variant="h6" py={"auto"}>
+                    <Typography variant="h6">
                       <b>Catch Waves with</b>
                     </Typography>
-                    <Typography variant="h6" py={"auto"}>
+                    <Typography variant="h6" >
                       <b>an Adventure Guide</b>
                     </Typography>
                     <Box paddingTop={"5px"} paddingBottom="5px">
-                      <Typography variant="caption text" py={"auto"}>
+                      <Typography variant="caption text" >
                         <b>Travel</b> / August 19 2017
                       </Typography>
                     </Box>
