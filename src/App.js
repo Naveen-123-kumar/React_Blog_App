@@ -2,7 +2,6 @@ import {ThemeProvider } from "@mui/material";
 import React from "react";
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 import Theme from "./Thems";
-
 import BlogPage from "./Pages/BlogPage";
 import BollywoodPage from "./Components/Bollywood/BollywoodPage";
 import ReactAnimation from "./Components/ReactAnimationComponent/ReactAnimation";
@@ -14,17 +13,7 @@ const App = () => {
     <Route path="/" element={<BlogPage />} />
     <Route path="/page1" element={<BollywoodPage />} />
     <Route path="/page2" element={<ReactAnimation />} />
-
-
-    </Routes>
-    {/* <ReactAnimation/> */}
-    {/* <BollywoodPage/> */}
-      {/* <Navbar/>
-      <LandingPage/>
-      <PaperComponent/>
-      <LatestArticle/>
-      <LatestPaper/> */}
-      
+    </Routes>  
     </BrowserRouter>
     </ThemeProvider>
 

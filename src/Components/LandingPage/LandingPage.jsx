@@ -11,9 +11,12 @@ const LandingPage = () => {
         justifyContent="center"
         flexDirection={"row"}
         width="90%"
-        sx={{width:{md:'90%',xs:'98%'},paddingTop:{xs:'20px',md:'50px'},paddingBottom:{xs:'50px',md:'50px'}}}
-        // paddingY={"50px"}
-        mx='auto'
+        sx={{
+          width: { md: "90%", xs: "98%" },
+          paddingTop: { xs: "20px", md: "150px" },
+          paddingBottom: { xs: "50px", md: "50px" },
+        }}
+        mx="auto"
       >
         <Box
           sx={{

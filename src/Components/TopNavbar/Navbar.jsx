@@ -11,16 +11,21 @@ import {
 import React from "react";
 import Theme from "../../Thems";
 import MenuIcon from "@mui/icons-material/Menu";
-
+import { Link } from "react-router-dom";
 const Navbarbutton = [
-  "Home",
-  "Bollywood",
-  "Technology",
-  "Hollywood",
-  "Fitness",
-  "Food",
+  { title: "Home", location: "/" },
+  { title: "Bollywood", location: "/page1" },
+  { title: "Technology", location: "/page2" },
+  { title: "Hollywood", location: "/" },
+  { title: "Fitness", location: "/" },
+  { title: "Food", location: "/" },
 ];
-const pages = ["Home", "Bollywood", "Technology", "Hollywood"];
+const pages = [
+  { title: "Home", location: "/" },
+  { title: "Bollywood", location: "/page1" },
+  { title: "Technology", location: "/page2" },
+  { title: "Hollywood", location: "/" },
+];
 const Navbar = () => {
   const [Open, setOpen] = React.useState(null);
   const handleOpenNavMenu = (event) => {
@@ -32,7 +37,7 @@ const Navbar = () => {
   return (
     <>
       <ThemeProvider theme={Theme}>
-        <Paper>
+        <Paper sx={{ position: "fixed", top:'0',right:'0px',left:'0px'}}>
           <Grid container>
             <Grid item lg={12} xs={12}>
               <Box
@@ -96,7 +101,11 @@ const Navbar = () => {
                   >
                     {pages.map((page) => (
                       <MenuItem key={page} onClick={handleCloseNavMenu}>
-                        <Typography textAlign="center">{page}</Typography>
+                        <Link to={page.location}>
+                          <Typography textAlign="center">
+                            {page.title}
+                          </Typography>
+                        </Link>
                       </MenuItem>
                     ))}
                   </Menu>
@@ -113,7 +122,9 @@ const Navbar = () => {
               >
                 {Navbarbutton.map((item) => (
                   <Box>
-                    <Typography textAlign="center">{item}</Typography>
+                    <Link to={item.location}>
+                      <Typography textAlign="center">{item.title}</Typography>
+                    </Link>
                   </Box>
                 ))}
               </Box>
