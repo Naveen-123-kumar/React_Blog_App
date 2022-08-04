@@ -11,8 +11,8 @@ const BollywoodPage = () => {
         px="auto"
         mx="auto"
         sx={{
-          width: { md: "90%", xs: "100%" },
-          paddingY: { md: "30px", xs: "40px" },
+          width: { md: "100%", xs: "100%" },
+          paddingY: { md: "10%", xs: "15%" },
         }}
       >
         <Grid container justifyContent={"center"}>

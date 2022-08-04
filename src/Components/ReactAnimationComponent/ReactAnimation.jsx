@@ -13,7 +13,7 @@ import Card2 from "./Card2";
 const ReactAnimation = () => {
   return (
     <>
-      <Grid container bgcolor={"white"} justifyContent="center" paddingY={'20px'}>
+      <Grid container bgcolor={"white"} justifyContent="center" sx={{paddingTop:{md:'10%',xs:'15%'},paddingBottom:{md:'1%',xs:'15%'}}}>
         <Grid item lg={4.5} xs={11}>
           <Box paddingY={"10px"}>
             <Typography
