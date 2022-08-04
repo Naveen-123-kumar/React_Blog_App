@@ -3,7 +3,6 @@ import { Box, Paper, Typography } from "@mui/material";
 import LandingPage from "../Components/LandingPage/LandingPage";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import PaperComponent from "../Components/LatestComponent/PaperComponent";
-import Navbar from "../Components/TopNavbar/Navbar";
 import LatestPaper from "../Components/LatestStoriesComponent/LatestPaper";
 import MainPage from "../Components/LatestArticleComponent/MainPage";
 import { Link } from "react-router-dom";
@@ -12,8 +11,6 @@ const BlogPage = () => {
     <>
 
       <Paper elevation={0}>
-      <Navbar />
-
         <LandingPage />
         <Box
           mx="auto"
