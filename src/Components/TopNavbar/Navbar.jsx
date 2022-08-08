@@ -12,6 +12,7 @@ import React from "react";
 import Theme from "../../Thems";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
+
 const Navbarbutton = [
   { title: "Home", location: "/" },
   { title: "Bollywood", location: "/page1" },
@@ -20,24 +21,28 @@ const Navbarbutton = [
   { title: "Fitness", location: "/" },
   { title: "Food", location: "/" },
 ];
+
 const pages = [
   { title: "Home", location: "/" },
   { title: "Bollywood", location: "/page1" },
   { title: "Technology", location: "/page2" },
   { title: "Hollywood", location: "/" },
 ];
+
 const Navbar = () => {
   const [Open, setOpen] = React.useState(null);
   const handleOpenNavMenu = (event) => {
     setOpen(event.currentTarget);
+    // console.log(event.currentTarget)
   };
+  
   const handleCloseNavMenu = () => {
     setOpen(null);
   };
   return (
     <>
       <ThemeProvider theme={Theme}>
-        <Paper sx={{ position: "fixed", top:'0',right:'0px',left:'0px'}}>
+        <Paper sx={{ position: "fixed", top: "0", right: "0px", left: "0px" }}>
           <Grid container>
             <Grid item lg={12} xs={12}>
               <Box
@@ -45,7 +50,7 @@ const Navbar = () => {
                   display: { xs: "flex" },
                   justifyContent: { xs: "space-between", md: "none" },
                 }}
-              >
+                >
                 <Box
                   sx={{
                     textAlign: { xs: "left", md: "center" },
@@ -73,16 +78,17 @@ const Navbar = () => {
                 >
                   <IconButton
                     size="large"
-                    aria-label="account of current user"
-                    aria-controls="menu-appbar"
-                    aria-haspopup="true"
+                  
+                    // aria-label="account of current user"
+                    // aria-controls="menu-appbar"
+                    // aria-haspopup="true"
                     onClick={handleOpenNavMenu}
                     color="inherit"
                   >
                     <MenuIcon />
                   </IconButton>
                   <Menu
-                    id="menu-appbar"
+                    id="menu-appbar"  
                     anchorEl={Open}
                     anchorOrigin={{
                       vertical: "bottom",
@@ -135,5 +141,4 @@ const Navbar = () => {
     </>
   );
 };
-
 export default Navbar;

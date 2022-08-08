@@ -6,6 +6,7 @@ import Image1 from "../../Assets/NewBuilding.jpg";
 import { Link } from "react-router-dom";
 import TopPost from "../LatestStoriesComponent/TopPost";
 const MainPage = () => {
+  
   return (
     <>
       <Box
@@ -25,8 +26,8 @@ const MainPage = () => {
             sx={{ paddingY: { xs: "20px", md: "30px" } }}
           >
             <Link to="/Page1">
-            <ArrowDownwardIcon fontSize="large" color="red" />{" "}
-            <Typography variant="caption text" paddingTop="5px">
+            <ArrowDownwardIcon fontSize="large" color="red"/>
+            <Typography variant="caption text" paddingBottom={'10px'} paddingLeft={'10px'}>
               LOAD MORE
             </Typography>
             </Link>
@@ -86,7 +87,9 @@ const MainPage = () => {
             <Typography variant="h6">Top Posts</Typography>
           </Box>
           <Hidden>
-            <Box>
+
+            {/*  */}
+             <Box>
               <Paper elevation={1}>
                 <Box
                   sx={{
@@ -103,7 +106,7 @@ const MainPage = () => {
                 <Box
                   sx={{
                     width: { md: "450px", xs: "200px" },
-                    paddingX: { md: "5px", xs: "10px" },
+                    paddingX: { md: "0px", xs: "10px" },
                   }}
                   paddingBottom="20px"
                 >
@@ -120,7 +123,9 @@ const MainPage = () => {
                   </Box>
                 </Box>
               </Paper>
-            </Box>
+            </Box> 
+           {/*  */}
+
           </Hidden>
           <TopPost />
         </Grid>

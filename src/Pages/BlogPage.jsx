@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 const BlogPage = () => {
   return (
     <>
-
       <Paper elevation={0}>
         <LandingPage />
         <Box
@@ -24,7 +23,6 @@ const BlogPage = () => {
           <PaperComponent />
         </Box>
         <MainPage />
-
         <Box
           mx="auto"
           width="90%"
@@ -50,7 +48,7 @@ const BlogPage = () => {
             </Typography>
           </Link>
           <Link to="/Page1">
-            <ArrowForwardIcon fontSize="medium" />
+            <ArrowForwardIcon fontSize="medium"/>
           </Link>
         </Box>
       </Paper>

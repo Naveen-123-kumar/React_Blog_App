@@ -15,6 +15,7 @@ const App = () => {
     <Route path="/" element={<BlogPage />} />
     <Route path="/page1" element={<BollywoodPage />} />
     <Route path="/page2" element={<ReactAnimation />} />
+    
     </Routes>  
     </BrowserRouter>
     </ThemeProvider>
