@@ -6,7 +6,6 @@ import Image1 from "../../Assets/NewBuilding.jpg";
 import { Link } from "react-router-dom";
 import TopPost from "../LatestStoriesComponent/TopPost";
 const MainPage = () => {
-  
   return (
     <>
       <Box
@@ -25,13 +24,12 @@ const MainPage = () => {
             justifyContent="start"
             sx={{ paddingY: { xs: "20px", md: "30px" } }}
           >
-            <Link to="/Page1">
+            <Link to="/hollywood">
             <ArrowDownwardIcon fontSize="large" color="red"/>
             <Typography variant="caption text" paddingBottom={'10px'} paddingLeft={'10px'}>
               LOAD MORE
             </Typography>
             </Link>
-           
           </Box>
           <Hidden smDown>
             <Box paddingTop="80px">
@@ -62,7 +60,7 @@ const MainPage = () => {
                   py={"auto"}
                   paddingLeft="50px"
                 >
-                  Travel/ August 19 2017
+                  Travel/ August 19 2022
                 </Typography>
               </Box>
             </Box>
@@ -118,7 +116,7 @@ const MainPage = () => {
                   </Typography>
                   <Box paddingTop={"5px"} paddingBottom="5px">
                     <Typography variant="caption text">
-                      <b>Travel</b> / August 19 2017
+                      <b>Travel</b> / August 19 2022
                     </Typography>
                   </Box>
                 </Box>

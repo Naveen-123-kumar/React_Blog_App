@@ -1,49 +1,20 @@
-import { Box, Paper, Typography, Grid } from "@mui/material";
 import React from "react";
-import { useContext } from "react";
+import { Box, Paper, Typography, Grid } from "@mui/material";
 import { Link } from "react-router-dom";
-import Image1 from "../../Assets/OldBuilding.jpg";
 import { NewsContext } from "../../contextAPI/NewsProvider";
-// import { Data } from "../Bollywood/Component1";
-// const Data = [
-//   {
-//     id: "4pid30ff84",
-//     img1: 'https://www.themoviedb.org/t/p/w235_and_h235_face/36kNTfOAqJhom14fEoU56cPrhF6.jpg',
-//     Heading1: "Ranvir Kapur is felling happy",
-//     sub1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit",
-//     subh1: "Travel",
-//     date1: "/ August 19 2022",
-//   },
-//   {
-//     id: "5pid30ff84",
-//     img1: 'https://img.indiaforums.com/media/640x0/50/0732-anushka-sharma-karnesh-sharma.jpg',
-//     Heading1: "Anushaka Sharma is with her friend",
-//     sub1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit",
-//     subh1: "Travel",
-//     date1: "/ August 19 2022",
-//   },
-//   {
-//     id: "6pid30ff84",
-//     img1: 'https://upload.wikimedia.org/wikipedia/commons/7/7f/Sonam-Kapoor-attends-Cond%C3%A9-Nast-Traveller-India-event.jpg',
-//     Heading1: "Sonam Kapur lates news",
-//     sub1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit",
-//     subh1: "Travel",
-//     date1: "/ August 19 2022",
-//   },
-// ];
-
-const TopPost = () => {
+import { useContext } from "react";
+export default function FoodComponent3() {
   return (
-    <>
+    <div>
       <Cards></Cards>
-    </>
+    </div>
   );
-};
+}
 const Cards = () => {
-  const { bollywood } = useContext(NewsContext);
-  const listitems = bollywood?.slice(0, 3).map((card) => (
+  const { food } = useContext(NewsContext);
+  const listitems = food?.slice(0, 3).map((card) => (
     <Grid item lg="12" xs={12}>
-      <Link to={`/bollywood/${card.id}`} style={{ textDecoration: "none" }}>
+      <Link to={`/food/${card.id}`} style={{ textDecoration: "none" }}>
         <Paper elevation={1}>
           <Box
             sx={{
@@ -100,4 +71,3 @@ const Cards = () => {
     </>
   );
 };
-export default TopPost;

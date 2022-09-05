@@ -1,7 +1,8 @@
-import { Box, Hidden, Paper, Typography } from "@mui/material";
 import React from "react";
-import Component3 from "./Component3";
-const Component2 = () => {
+import { Box, Hidden, Paper, Typography } from "@mui/material";
+import FitnessComponent3 from "./FitnessComponent3";
+import { useContext } from "react";
+export default function FitnessComponent2() {
   return (
     <>
       <Box>
@@ -11,7 +12,7 @@ const Component2 = () => {
               sx={{
                 width: { md: "100%", xs: "330px" },
                 height: { md: "33vh", xs: "25vh" },
-                backgroundImage: `url(https://www.pinkvilla.com/imageresize/swara_bhasker_main_3.jpg?width=752&format=webp&t=pvorg)`,
+                backgroundImage: `url(https://m.economictimes.com/thumb/msid-85206159,width-1200,height-900,resizemode-4,imgsize-81692/fitness.jpg)`,
                 backgroundSize: "100% 100%",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center center",
@@ -27,8 +28,8 @@ const Component2 = () => {
               // paddingBottom="20px"
             >
               <Typography variant="h6" py={"auto"}>
-                Swara Bhasker says boycott trend in Bollywood is driven by
-                agenda
+                This Hollywood actress shares hot picture on social media, fans
+                go amazed
               </Typography>
               {/* <Typography variant="h4" py={"auto"}>
                 an Adventure Guide
@@ -43,7 +44,7 @@ const Component2 = () => {
           </Box>
         </Paper>
       </Box>
-      <Component3 />
+      <FitnessComponent3 />
       <Hidden mdDown>
         <Box sx={{ paddingTop: { md: "20px" } }}>
           <Box
@@ -59,7 +60,7 @@ const Component2 = () => {
               sx={{
                 width: { md: "100%", xs: "330px" },
                 height: { md: "100vh", xs: "100vh" },
-                backgroundImage: `url(https://m.media-amazon.com/images/M/MV5BMDk1MDYwODgtZGExMS00ZDk3LWJmYWMtOGE2YzNmYjZiNDVlXkEyXkFqcGdeQXVyNTIwODMzNjc@._V1_.jpg)`,
+                backgroundImage: `url(https://images.healthshots.com/healthshots/en/uploads/2022/03/20121414/fitness-woman-1600x900.jpg)`,
                 backgroundSize: "100% 100%",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center center",
@@ -74,6 +75,4 @@ const Component2 = () => {
       </Hidden>
     </>
   );
-};
-
-export default Component2;
+}

@@ -1,12 +1,12 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
-import React from "react";
-import Component1 from "./Component1";
-import Component2 from "./Component2";
+import React from 'react'
+import { Box, Grid, Typography } from "@mui/material";
+import Component1 from '../../Components/Hollywoodcomponent/Component1';
+import Component2 from '../../Components/Hollywoodcomponent/Component2';
 
-const BollywoodPage = () => {
+export default function HolywoodPage() {
   return (
     <>
-      <Box
+    <Box
         bgcolor={"white"}
         px="auto"
         mx="auto"
@@ -19,10 +19,10 @@ const BollywoodPage = () => {
           <Grid item lg={6} xs={12}>
             <Box mx="auto" width={"100%"}>
               <Typography variant="h4" fontWeight={"bold"} padding="20px">
-                Bollywood
+                Hollywood
               </Typography>
             </Box>
-            <Component1 />
+            <Component1/>
           </Grid>
           <Grid item lg={4} xs={12}>
             <Box mx="auto" width={"100%"}>
@@ -30,12 +30,10 @@ const BollywoodPage = () => {
                 Top Post
               </Typography>
             </Box>
-            <Component2 />
+            <Component2/>
           </Grid>
         </Grid>
       </Box>
     </>
-  );
-};
-
-export default BollywoodPage;
+  )
+}

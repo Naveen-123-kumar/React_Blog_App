@@ -34,6 +34,8 @@ const Card2 = () => {
     </>
   );
 };
+
+
 const Cards = (props) => {
   const listitems = props.Data.map((card) => (
     <Grid item xs={12} padding="10px" borderRadius={"10px"}>

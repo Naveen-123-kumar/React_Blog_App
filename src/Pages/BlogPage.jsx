@@ -6,6 +6,7 @@ import PaperComponent from "../Components/LatestComponent/PaperComponent";
 import LatestPaper from "../Components/LatestStoriesComponent/LatestPaper";
 import MainPage from "../Components/LatestArticleComponent/MainPage";
 import { Link } from "react-router-dom";
+import Card1 from "../Components/ReactAnimationComponent/Card1";
 const BlogPage = () => {
   return (
     <>
@@ -33,7 +34,8 @@ const BlogPage = () => {
           <br />
           <br />
           <hr />
-          <LatestPaper />
+       
+          <Card1/>
         </Box>
         <Box
           display={"flex"}
@@ -42,12 +44,12 @@ const BlogPage = () => {
             paddingBottom: { xs: "20px", md: "40px" },
           }}
         >
-          <Link to="/page2">
+          <Link to="/technology">
             <Typography variant="caption text" paddingTop={"5px"}>
               LOAD MORE
             </Typography>
           </Link>
-          <Link to="/Page1">
+          <Link to="/bollywood">
             <ArrowForwardIcon fontSize="medium"/>
           </Link>
         </Box>

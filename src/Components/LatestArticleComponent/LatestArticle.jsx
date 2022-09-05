@@ -1,50 +1,57 @@
 import { Box, Paper, Typography,Grid } from "@mui/material";
 import React from "react";
+import { useContext } from "react";
+import { Link } from "react-router-dom";
 import Image1 from "../../Assets/OldBuilding.jpg";
-const Data=[
-  {
-    img1: Image1,
-    Heading1: "Catch Waves with",
-    Heading2: "an Adventure Guide",
-    sub1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit hfoerouhfodsihgpd hga",
-    subh1: "Travel",
-    date1: "/ August 19 2017",
-  },
-  {
-    img1: Image1,
-    Heading1: "Joshua Tree",
-    Heading2: "Overnight Adventure",
-    sub1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit hfoerouhfodsihgpd hga",
-    subh1: "Travel",
-    date1: "/ August 19 2017",
-  },
-  {
-    img1: Image1,
-    Heading1: "Joshua Tree",
-    Heading2: "Overnight Adventure",
-    sub1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit hfoerouhfodsihgpd hga",
-    subh1: "Travel",
-    date1: "/ August 19 2017",
-  },
-  {
-    img1: Image1,
-    Heading1: "Joshua Tree",
-    Heading2: "Overnight Adventure",
-    sub1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit hfoerouhfodsihgpd hga",
-    subh1: "Travel",
-    date1: "/ August 19 2017",
-  },
-]
+import { NewsContext } from "../../contextAPI/NewsProvider";
+// const Data=[
+//   {
+//     img1: Image1,
+//     Heading1: "Catch Waves with",
+//     Heading2: "an Adventure Guide",
+//     sub1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit hfoerouhfodsihgpd hga",
+//     subh1: "Travel",
+//     date1: "/ August 19 2022",
+//   },
+//   {
+//     img1: Image1,
+//     Heading1: "Joshua Tree",
+//     Heading2: "Overnight Adventure",
+//     sub1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit hfoerouhfodsihgpd hga",
+//     subh1: "Travel",
+//     date1: "/ August 19 2022",
+//   },
+//   {
+//     img1: Image1,
+//     Heading1: "Joshua Tree",
+//     Heading2: "Overnight Adventure",
+//     sub1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit hfoerouhfodsihgpd hga",
+//     subh1: "Travel",
+//     date1: "/ August 19 2022",
+//   },
+//   {
+//     img1: Image1,
+//     Heading1: "Joshua Tree",
+//     Heading2: "Overnight Adventure",
+//     sub1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit hfoerouhfodsihgpd hga",
+//     subh1: "Travel",
+//     date1: "/ August 19 2022",
+//   },
+// ]
 const LatestArticle = () => {
   return (
     <>
-    <Cards Data={Data}></Cards>
+    <Cards></Cards>
     </>
   )
 }
+export default LatestArticle
+
 const Cards=(props)=>{
-  const listitems=props.Data.map((card)=>(
-    <Grid item lg='11' xs={12}>
+  const {hollywood} =useContext(NewsContext)
+  const listitems=hollywood?.slice(0,4).map((card,index)=>(
+    <Grid item lg='11' xs={12} >
+    <Link to={`/hollywood/${card.id}`} style={{ textDecoration: "none" }}>
 
     <Paper elevation={1}>
 
@@ -53,7 +60,7 @@ const Cards=(props)=>{
       sx={{
         width: { md: "255px", xs: "160px" },
         height: { md: "24vh", xs: "15vh" },
-        backgroundImage: `url(${Image1})`,
+        backgroundImage: `url(${card.img1})`,
         backgroundSize: "100% 100%",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center center",
@@ -80,6 +87,7 @@ const Cards=(props)=>{
     
 </Box>
 </Paper>
+</Link>
 </Grid>
   ));
   return (
@@ -90,4 +98,3 @@ const Cards=(props)=>{
     </>
   )
 }
-export default LatestArticle

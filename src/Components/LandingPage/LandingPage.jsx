@@ -22,7 +22,7 @@ const LandingPage = () => {
           sx={{
             width: { md: "900px", xs: "450px" },
             height: { md: "70vh", xs: "50vh" },
-            backgroundImage: `url(${Image1})`,
+            backgroundImage: `url(https://filmfare.wwmindia.com/thumb/content/2022/jun/toptensongsofjubinnautiyalyoumustlistentoonhisbirthday11655189119.jpg?width=1200&height=900)`,
             backgroundSize: "100% 100%",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center center",
@@ -37,7 +37,7 @@ const LandingPage = () => {
             paddingTop={"250px"}
             paddingLeft="50px"
           >
-            Titel of vertical galary
+           Jubin Nautiyal
           </Typography>
           <Typography
             variant="subtitle1"
@@ -45,7 +45,7 @@ const LandingPage = () => {
             py={"auto"}
             paddingLeft="50px"
           >
-            Travel/ August 19 2017
+            Travel/ August 19 2022
           </Typography>
         </Box>
         <Hidden smDown>
@@ -62,7 +62,7 @@ const LandingPage = () => {
               sx={{
                 width: { md: "100%", xs: "450px" },
                 height: { md: "210px", xs: "50vh" },
-                backgroundImage: `url(${Image2})`,
+                backgroundImage: `url(https://assets.thehansindia.com/h-upload/feeds/2019/07/08/193862-kiara.jpg)`,
                 backgroundSize: "100% 100%",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center center",
@@ -75,9 +75,9 @@ const LandingPage = () => {
                 paddingTop={"100px"}
                 paddingLeft="50px"
               >
-                The Sound cloud
+                When Kabir Singh opened up a can of worms
               </Typography>
-              <Typography
+              {/* <Typography
                 variant="h5"
                 py={"auto"}
                 color="white"
@@ -85,14 +85,14 @@ const LandingPage = () => {
                 paddingLeft="50px"
               >
                 You loved is doomed
-              </Typography>
+              </Typography> */}
               <Typography
                 variant="subtitle1"
                 color={"wheat"}
                 py={"auto"}
                 paddingLeft="50px"
               >
-                Travel/ August 19 2017
+                Travel/ August 19 2022
               </Typography>
             </Box>
             <Box
@@ -100,20 +100,20 @@ const LandingPage = () => {
               sx={{
                 width: { md: "100%", xs: "450px" },
                 height: { md: "210px", xs: "50vh" },
-                backgroundImage: `url(${Image2})`,
+                backgroundImage: `url(https://c.ndtvimg.com/2019-07/2k7qj7u_kabir-singh-instagram_625x300_03_July_19.jpg)`,
                 backgroundSize: "100% 100%",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center center",
               }}
             >
               <Typography
-                variant="h5"
+                variant="h6"
                 py={"auto"}
                 color="white"
                 paddingTop={"120px"}
                 paddingLeft="50px"
               >
-                Titel of vertical galary
+                The film is about to complete its second week at the theatres
               </Typography>
               <Typography
                 variant="subtitle1"
@@ -121,7 +121,7 @@ const LandingPage = () => {
                 py={"auto"}
                 paddingLeft="50px"
               >
-                Travel/ August 19 2017
+                Travel/ August 19 2022
               </Typography>
             </Box>
           </Box>

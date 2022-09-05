@@ -1,19 +1,9 @@
-import { Box, Grid, Hidden, Paper, Typography } from "@mui/material";
-import React from "react";
-import Image1 from "../../Assets/Avatarjpg.jpg";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
-import Image2 from "../../Assets/ReactApp.png";
-import Image3 from "../../Assets/CodeImage.png";
-import Card1  from "./Card1";
-import Card2 from "./Card2";
+import React from 'react'
 
-const ReactAnimation = () => {
+export default function TechPage() {
   return (
     <>
-      <Grid
+    <Grid
         container
         bgcolor={"white"}
         justifyContent="center"
@@ -117,7 +107,6 @@ const ReactAnimation = () => {
               <Box
                 sx={{
                   display: { md: "flex", xs: "flex" },
-                  // justifyContent: { md: "space-b" },
                 }}
               >
                 <Box
@@ -151,7 +140,5 @@ const ReactAnimation = () => {
         </Hidden>
       </Grid>
     </>
-  );
-};
-
-export default ReactAnimation;
+  )
+}

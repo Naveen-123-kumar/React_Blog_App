@@ -1,24 +1,24 @@
 import { Box, Hidden, Paper, Typography } from "@mui/material";
-import React from "react";
-import Component3 from "./Component3";
-const Component2 = () => {
+import React from 'react';
+// import Component3 from './Component3';
+import FoodComponent3 from './FoodComponent3';
+export default function FoodComponent2() {
   return (
-    <>
-      <Box>
+    <div>
+        <Box>
         <Paper elevation={1}>
           <Box paddingLeft={"15px"}>
             <Box
               sx={{
                 width: { md: "100%", xs: "330px" },
                 height: { md: "33vh", xs: "25vh" },
-                backgroundImage: `url(https://www.pinkvilla.com/imageresize/swara_bhasker_main_3.jpg?width=752&format=webp&t=pvorg)`,
+                backgroundImage: `url(https://asset20.ckassets.com/blog/wp-content/uploads/sites/5/2019/12/Onion-Dosa.jpg)`,
                 backgroundSize: "100% 100%",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center center",
               }}
               borderRadius="10px"
             />
-
             <Box
               sx={{
                 width: { md: "450px", xs: "350px" },
@@ -27,8 +27,7 @@ const Component2 = () => {
               // paddingBottom="20px"
             >
               <Typography variant="h6" py={"auto"}>
-                Swara Bhasker says boycott trend in Bollywood is driven by
-                agenda
+              Get Your Fill Of Cheap Food From These Restaurants With Zomato
               </Typography>
               {/* <Typography variant="h4" py={"auto"}>
                 an Adventure Guide
@@ -36,14 +35,14 @@ const Component2 = () => {
 
               <Box paddingTop={"5px"} paddingBottom="20px">
                 <Typography variant="caption text" py={"auto"}>
-                  <b>Travel</b> / August 19 2017
+                  <b>Travel</b> / Sep 04 2020
                 </Typography>
               </Box>
             </Box>
           </Box>
         </Paper>
       </Box>
-      <Component3 />
+      <FoodComponent3/>
       <Hidden mdDown>
         <Box sx={{ paddingTop: { md: "20px" } }}>
           <Box
@@ -59,7 +58,7 @@ const Component2 = () => {
               sx={{
                 width: { md: "100%", xs: "330px" },
                 height: { md: "100vh", xs: "100vh" },
-                backgroundImage: `url(https://m.media-amazon.com/images/M/MV5BMDk1MDYwODgtZGExMS00ZDk3LWJmYWMtOGE2YzNmYjZiNDVlXkEyXkFqcGdeQXVyNTIwODMzNjc@._V1_.jpg)`,
+                backgroundImage: `url(https://static.toiimg.com/photo/76179976.cms)`,
                 backgroundSize: "100% 100%",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center center",
@@ -72,8 +71,6 @@ const Component2 = () => {
           </Box>
         </Box>
       </Hidden>
-    </>
-  );
-};
-
-export default Component2;
+    </div>
+  )
+}

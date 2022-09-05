@@ -8,7 +8,7 @@ const Data = [
     Heading2: "an Adventure Guide",
     sub1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit hfoerouhfodsihgpd hga",
     subh1: "Travel",
-    date1: "/ August 19 2017",
+    date1: "/ August 19 2022",
   },
   {
     img1: Image1,
@@ -16,7 +16,7 @@ const Data = [
     Heading2: "Overnight Adventure",
     sub1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit hfoerouhfodsihgpd hga",
     subh1: "Travel",
-    date1: "/ August 19 2017",
+    date1: "/ August 19 2022",
   },
   {
     img1: Image1,
@@ -24,7 +24,7 @@ const Data = [
     Heading2: "Overnight Adventure",
     sub1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit hfoerouhfodsihgpd hga",
     subh1: "Travel",
-    date1: "/ August 19 2017",
+    date1: "/ August 19 2022",
   },
 ];
 const LatestPaper = () => {

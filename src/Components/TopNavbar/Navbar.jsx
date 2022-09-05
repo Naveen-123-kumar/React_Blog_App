@@ -15,17 +15,17 @@ import { Link } from "react-router-dom";
 
 const Navbarbutton = [
   { title: "Home", location: "/" },
-  { title: "Bollywood", location: "/page1" },
-  { title: "Technology", location: "/page2" },
-  { title: "Hollywood", location: "/" },
-  { title: "Fitness", location: "/" },
-  { title: "Food", location: "/" },
+  { title: "Bollywood", location: "/bollywood" },
+  { title: "Technology", location: "/technology" },
+  { title: "Hollywood", location: "/hollywood" },
+  { title: "Fitness", location: "/fitness" },
+  { title: "Food", location: "/food" },
 ];
 
 const pages = [
   { title: "Home", location: "/" },
-  { title: "Bollywood", location: "/page1" },
-  { title: "Technology", location: "/page2" },
+  { title: "Bollywood", location: "/bollywood" },
+  { title: "Technology", location: "/technology" },
   { title: "Hollywood", location: "/" },
 ];
 
@@ -33,9 +33,8 @@ const Navbar = () => {
   const [Open, setOpen] = React.useState(null);
   const handleOpenNavMenu = (event) => {
     setOpen(event.currentTarget);
-    // console.log(event.currentTarget)
   };
-  
+
   const handleCloseNavMenu = () => {
     setOpen(null);
   };
@@ -50,7 +49,7 @@ const Navbar = () => {
                   display: { xs: "flex" },
                   justifyContent: { xs: "space-between", md: "none" },
                 }}
-                >
+              >
                 <Box
                   sx={{
                     textAlign: { xs: "left", md: "center" },
@@ -75,20 +74,17 @@ const Navbar = () => {
                     display: { xs: "flex", md: "none" },
                     paddingRight: { xs: "20px", md: "none" },
                   }}
+                  
                 >
                   <IconButton
                     size="large"
-                  
-                    // aria-label="account of current user"
-                    // aria-controls="menu-appbar"
-                    // aria-haspopup="true"
                     onClick={handleOpenNavMenu}
                     color="inherit"
                   >
                     <MenuIcon />
                   </IconButton>
                   <Menu
-                    id="menu-appbar"  
+                    id="menu-appbar"
                     anchorEl={Open}
                     anchorOrigin={{
                       vertical: "bottom",
@@ -107,8 +103,8 @@ const Navbar = () => {
                   >
                     {pages.map((page) => (
                       <MenuItem key={page} onClick={handleCloseNavMenu}>
-                        <Link to={page.location}>
-                          <Typography textAlign="center">
+                        <Link to={page.location} style={{ textDecoration: "none" }}>
+                          <Typography textAlign="center" style={{ textDecoration: 'none' }}>
                             {page.title}
                           </Typography>
                         </Link>
@@ -128,8 +124,8 @@ const Navbar = () => {
               >
                 {Navbarbutton.map((item) => (
                   <Box>
-                    <Link to={item.location}>
-                      <Typography textAlign="center">{item.title}</Typography>
+                    <Link to={item.location} style={{ textDecoration: "none" }}>
+                      <Typography textAlign="center" style={{ textDecoration: 'none' }}>{item.title}</Typography>
                     </Link>
                   </Box>
                 ))}
