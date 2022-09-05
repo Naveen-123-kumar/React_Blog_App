@@ -19,7 +19,7 @@ export default function TechPage() {
           <Grid item lg={6} xs={12}>
             <Box mx="auto" width={"100%"}>
               <Typography variant="h4" fontWeight={"bold"} padding="20px">
-                Hollywood
+                Technology
               </Typography>
             </Box>
             <TechnologyComponent1 />
